@@ -1,0 +1,93 @@
+
+body {
+    background-color: #036ffc;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-image: url('./res/media/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro {
+    max-width: 500px;
+    margin: 15vh auto;
+    padding: 2.5em;
+    background-color: rgba(50, 60, 70, 0.85);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.intro h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.intro p {
+    margin: 0;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(120deg, rgba(3,140,252,0.2), rgba(255,255,255,0.05));
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+body * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.intro {
+    background: rgba(50, 60, 70, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(3, 111, 252, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeSlideIn 1s ease-out;
+}
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.navbar a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+
+.navbar a:hover {
+    color: #00f0ff; 
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
